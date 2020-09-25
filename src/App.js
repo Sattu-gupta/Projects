@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.css';
 import About from './components/About';
 import Contacts from './components/Contacts';
@@ -10,31 +9,34 @@ import Portfolio from './components/Portfolio';
 import Pricing from './components/Pricing';
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
+import SignLogin from './components/SignLogin';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Test from './components/pages/Test';
+// import Banner from './components/Banner';
 //import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
-// function App() {
-//   return (
-//     <div className="App">
-//      <Navbar />
-//      <Hero /> 
-//      <About />        
-//     </div>
-//   );
-// }
+
 
 const App = () =>{
   return (
+    <Router>
     <div className="App">
       <Navbar />
-      <Hero /> 
-      <About /> 
-      <Services />  
-      <Portfolio />  
+       {/* <Banner/> */}
+      <Switch>
+      <Route exact path="/" component={Hero} />
+      <Route exact path="/test" component={Test} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/Services" component={Services} />
+      <Route exact path="/portfolio" component={Portfolio} />
+      <Route exact path="/pricing" component={Pricing} />
+      <Route exact path="/contact" component={Contacts} />
+      <Route exact path="/SignLogin" component={SignLogin} />
+      </Switch>
       <Testimonials />   
-      <Pricing />
-      <Contacts />
       <Footer />
-    </div>
+      </div>
+    </Router>
   );
 }
 
