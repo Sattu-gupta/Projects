@@ -15,7 +15,7 @@ const Footer = () =>{
       </a>
     </div>
  
-    <hr class="my-4"/>
+    {/* <hr class="my-4"/> */}
 
     <div class="pb-4">
       <a href="https://www.facebook.com/" target="_blank">

@@ -21,7 +21,7 @@
   padding: 5px 50px;
 }
 .bg-grey {
-  background-color: #f6f6f6;
+  background-color: #e3dee7;
 }
 .logo-small {
   color: #01cbff;
@@ -79,7 +79,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll; */
-  
+  margin-top: 46px;
   color: #fff;
 }
 .panel-heading {
