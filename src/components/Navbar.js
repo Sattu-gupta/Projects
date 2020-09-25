@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
-//const Navbar = ()=> we can use this function syntax instead  of function Navbar()
-function Navbar(){
+const Navbar = ()=>{
 return(
-    <nav className="navbar navbar-default navbar-fixed-top">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container">
     <div className="navbar-header">
       <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -12,15 +12,17 @@ return(
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>                        
       </button>
-      <a className="navbar-brand" href="#myPage">Logo</a>
+      <Link className="navbar-brand" active= "true" to="/"><img src="http://www.odbc.live/wp-content/uploads/2020/09/homepage-3-9.png" srcSet="http://www.odbc.live/wp-content/uploads/2020/09/homepage-3-9.png 1x" width="187" height="33" alt="ODBC Logo" data-retina_logo_url="" className="fusion-standard-logo"/></Link>
     </div>
     <div className="collapse navbar-collapse" id="myNavbar">
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/">Home</Link></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/Services">Test</Link></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/about">About Us</Link></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/portfolio">Porfolio</Link></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/pricing">The Road Map</Link></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/contact">Contact Us</Link></li>
+        <li className="nav-item"><Link className="nav-link" exact="true" to="/signlogin">Sign In</Link></li>
       </ul>
     </div>
   </div>
