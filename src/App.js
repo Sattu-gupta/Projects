@@ -12,7 +12,7 @@ import Testimonials from './components/Testimonials';
 import SignLogin from './components/SignLogin';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Test from './components/pages/Test';
-// import Banner from './components/Banner';
+
 //import "../node_modules/bootstrap/dist/css/bootstrap.css";
 
 
@@ -22,7 +22,7 @@ const App = () =>{
     <Router>
     <div className="App">
       <Navbar />
-       {/* <Banner/> */}
+      
       <Switch>
       <Route exact path="/" component={Hero} />
       <Route exact path="/test" component={Test} />

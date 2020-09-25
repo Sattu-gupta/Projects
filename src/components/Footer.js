@@ -5,19 +5,19 @@ const Footer = () =>{
     return(
       <Fragment>
 <footer className="container-fluid text-center footer-block">
-<div class="pt-4">
+<div className="pt-4">
 <a href="#myPage" title="To Top">
     <span className="glyphicon glyphicon-chevron-up"></span>
   </a>
-      <a class="btn btn-outline-white" href="http://odbc.live" target="_blank" role="button">Start
+      <a className="btn btn-outline-white" href="http://odbc.live" target="_blank" role="button">Start
       
-        <i class="fas fa-graduation-cap ml-2"></i>
+        <i className="fas fa-graduation-cap ml-2"></i>
       </a>
     </div>
  
     {/* <hr class="my-4"/> */}
 
-    <div class="pb-4">
+    {/* <div class="pb-4">
       <a href="https://www.facebook.com/" target="_blank">
         <i class="fab fa-facebook-f mr-3"></i>
       </a>
@@ -54,7 +54,7 @@ const Footer = () =>{
     <div class="footer-copyright py-3">
     © 2018 Copyright:
       <a href="https://odbc.live" target="_blank"> ODBC</a>
-    </div>
+    </div> */}
 
 </footer>
 </Fragment>
